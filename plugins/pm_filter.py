@@ -1263,18 +1263,41 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "source":
+    elif query.data == "credit_info":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about')
+            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='start')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.SOURCE_TXT,
+            text=script.CREDIT_INFO,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "group_info":
+        buttons = [[
+            InlineKeyboardButton("Bᴏᴛ Dᴀᴛᴀʙᴀꜱᴇ", url="https://t.me/Leomessi_10_19")
+                  ],[
+            InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/LUCGROUP"),
+            InlineKeyboardButton("​Cʜᴀɴɴᴇʟ", url="t.me/LCULINKZ")
+                  ],[
+            InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/cinemaworld_123"),
+            InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ", url="t.me/cinemaworld_update")
+                  ],[
+            InlineKeyboardButton("⇍Bᴀᴄᴋ", callback_data="start")
+        ]] 
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GROUP_INFO,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
