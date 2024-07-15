@@ -5,8 +5,7 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ CʀABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
+    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/Leomessi_10_19>ᴸᴱᴼ ᴹᴱˢˢᴵ</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
