@@ -1168,7 +1168,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🛠 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('⚜ ᴬᴮᴼᵁᵀ', callback_data='about')
             ],[
-            InlineKeyboardButton('💎 sᴜᴘᴘᴏʀᴛ', callback_data='support'),
+            InlineKeyboardButton('💎 sᴜᴘᴘᴏʀᴛ', callback_data='support_info'),
             InlineKeyboardButton('🔐 ᴄʟᴏsᴇ', callback_data='close_data')
         ]]
 
@@ -1246,8 +1246,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs​', callback_data="group_info"),
+            InlineKeyboardButton('⚡ 𝙲𝚁𝙴𝙳𝙸𝚃𝚂', callback_data="credit_info")
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
